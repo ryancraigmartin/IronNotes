@@ -2,26 +2,33 @@
 
 # Arrays 
 
-Arrays were one of the last things that I started learning when attempting to learn Java programming in college. Needless to say we only got a surface level understanding of what they are and what they are capable of. 
+Arrays were one of the last things that I started learning when attempting to learn Java programming in college. 
+Needless to say I only got a surface level understanding of what they are and what they are capable of. 
 
 #### Lets see if we can break down arrays:
 
-- [ ] *Explain what an array is, and what it is used for.*
+- [x] *Explain what an array is, and what it is used for.*
 
-- [ ] *Create an array in JavaScript.*
+- [x] *Create an array in JavaScript.*
 
-- [ ] *Perform some simple operations on an array.*
+- [x] *Perform some simple operations on an array.*
 
-- [ ] *Add and remove elements from an array.*
+- [x] *Add and remove elements from an array.*
 
 ### What is an Array?
 
-An array is one of the first data structures that you will use. Arrays are widely used in almost every programming language.
-
+An array is the first data structure that I've encountered.
+Arrays and other data structures are widely used in almost every programming language.
 An array is just a collection of anything. You can put anything in your list: `strings`, `numbers`, `objects`, and other data structures. You can even mix types in the same array.
 
+Now this begs the question, "What are the other data structures?"
+I've come accross an [article from the FreeCodeCamp Medium](https://medium.freecodecamp.org/10-common-data-structures-explained-with-videos-exercises-aaff6c06fb2b) that does a great job of covering some more commonly used data structures.
 
-&nbsp; Here is a simple example: 
+I'm sure each of those data structures will require their own note once I get to learning them, but for now that referance should be a good starting point.
+
+
+
+&nbsp; Here is a simple example of an Array: 
 
 ``` js
 var animalContainer= ["Dog", "Cat", "Fish"];
