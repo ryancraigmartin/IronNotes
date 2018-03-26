@@ -12,8 +12,7 @@ I am currently a student at IronHack Miami as part of their Full Stack Web Devel
 
 This repositoy is a collection of some of the notes I have taken along my journey from HelpDesk to developer over the course of the next 3 months. 
 
-Hope you can learn as much as I did while putting this together. 
+Hope you can learn as much as I did while putting these notes together. 
 
 Best,
-
 Ryan Craig Martin
