@@ -308,17 +308,3 @@ console.log("The largest number is: " + currentLargest);
 This [link](https://stackoverflow.com/questions/13167600/how-does-this-work-using-a-for-loop-to-find-the-largest-number-in-an-array) helped me figure out where my error was.
 
 ---
-## Extra Notes / Things to Research:
-
-***Properties***: Meta information about the object.
-
-***Methods***: Functions that belong to the object.
-
-
-**Data Structures:**
-
-- Single and Double LinkLists
-
-- ArrayLists
-
-- Stacks and Queues 
