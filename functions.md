@@ -140,7 +140,9 @@ console.log(theBiggest(10,100)); // These numbers are being passed as (a,b).
 ### Using `return` values.
 
 To return a value you use the keyword `return`. Simple enough!
+
 A function can only have one return value, but it can be any type of value.
+
 ***Beware,*** `return` ends the function immediately. Only use it when you want to return a value and end the function.
 
 ---
