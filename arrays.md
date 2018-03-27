@@ -260,15 +260,50 @@ for (var i = 0; i <= favoriteFoods.length; i++)
   }
 }
 ```
+---
 
-## Extra Notes:
+### Common Array Operations Exercises
 
-***Properties***: Meta information about the object.
+####[Sum the Numbers](https://repl.it/@ryancraigmartin/Averaging-Numbers-in-an-Array)
+This one took me a while to figure out. I was able to get it to count backwards from the last index and iterate each step along the way. Once I was able to have it work backwards, I was able to fix the for loop to get it working from index[0] to [5].
 
-***Methods***: Functions that belong to the object.
+&nbsp; Backwards:
+
+``` js
+var sum = 0, numbers = [2, 3, 6, 1, 7, 10];
+for (var i = numbers.length; i--;) // i starts at 5 and decrements to index 0.
+{
+  sum += numbers[i]; // 10+17+18+24+27 = 29
+}
+  console.log(sum);
+```
 
 
+&nbsp; Forward:
+``` js
+var sum = 0, numbers = [2, 3, 6, 1, 7, 10];
+for (var i = 0; i < numbers.length; i++)
+{
+  sum += numbers[i]; // 2+5+11+12+19 = 29
+}
+  console.log(sum);
+```
+#### [Average the Numbers](https://repl.it/@ryancraigmartin/LargestNumber)
+When trying my hand at averaging the only issue I had was that I was setting numbers[i] = currentLargest and not the other way around. Once that clicked, I was able to get 99 to show up as the largest number.
 
-Single and Double LinkLists
-ArrayLists
-Stacks and Queues 
+``` js
+var currentLargest = null;
+var numbers = [10, 16, 99, 0, 52, 41, 7];
+for (i = 0; i < numbers.length; i++ )
+{
+  if (numbers[i] > currentLargest)
+  {
+    currentLargest = numbers[i];
+  }
+}
+console.log("The largest number is: " + currentLargest);
+```
+
+This [link](https://stackoverflow.com/questions/13167600/how-does-this-work-using-a-for-loop-to-find-the-largest-number-in-an-array) helped me figure out where my error was.
+
+---
