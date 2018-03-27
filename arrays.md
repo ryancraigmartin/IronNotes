@@ -261,9 +261,6 @@ for (var i = 0; i <= favoriteFoods.length; i++)
 }
 ```
 
-
-
-
 ## Extra Notes:
 
 ***Properties***: Meta information about the object.
