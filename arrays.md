@@ -246,7 +246,19 @@ var favoriteFoods = ["Shrimp","Steak","Scallops","Crab","Lobster","Chicken"];
 2. With the loop of your choice, iterate through the array, but only print out the foods with an even index.
 
 ``` js
-var favoriteFoods = ["Shrimp","Steak","Scallops","Crab","Lobster","Chicken"];
+var favoriteFoods =   
+[
+	'Shrimp', 'Steak', 'Scallops',
+	'Crab', 'Lobster', 'Chicken',
+];
+
+for (var i = 0; i <= favoriteFoods.length; i++) 
+{
+  if (i % 2 === 0 )
+  {
+	  console.log(favoriteFoods[i]);
+  }
+}
 ```
 
 
