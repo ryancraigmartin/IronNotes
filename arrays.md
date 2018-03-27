@@ -236,7 +236,7 @@ computerParts.forEach(function(part){
 ```
 As you may have noticed, you’re passing to forEach a function as a parameter. This is called a callback function. 
 
-##### forEach Exercises
+#### forEach Exercises
 
 1. Create an array with 6 of your favorite foods.
 ``` js
@@ -260,11 +260,12 @@ for (var i = 0; i <= favoriteFoods.length; i++)
   }
 }
 ```
+
 ---
 
 ### Common Array Operations Exercises
 
-####[Sum the Numbers](https://repl.it/@ryancraigmartin/Averaging-Numbers-in-an-Array)
+#### [Sum the Numbers](https://repl.it/@ryancraigmartin/Averaging-Numbers-in-an-Array)
 This one took me a while to figure out. I was able to get it to count backwards from the last index and iterate each step along the way. Once I was able to have it work backwards, I was able to fix the for loop to get it working from index[0] to [5].
 
 &nbsp; Backwards:
@@ -307,3 +308,17 @@ console.log("The largest number is: " + currentLargest);
 This [link](https://stackoverflow.com/questions/13167600/how-does-this-work-using-a-for-loop-to-find-the-largest-number-in-an-array) helped me figure out where my error was.
 
 ---
+## Extra Notes / Things to Research:
+
+***Properties***: Meta information about the object.
+
+***Methods***: Functions that belong to the object.
+
+
+**Data Structures:**
+
+- Single and Double LinkLists
+
+- ArrayLists
+
+- Stacks and Queues 
