@@ -257,3 +257,9 @@ var favoriteFoods = ["Shrimp","Steak","Scallops","Crab","Lobster","Chicken"];
 ***Properties***: Meta information about the object.
 
 ***Methods***: Functions that belong to the object.
+
+
+
+Single and Double LinkLists
+ArrayLists
+Stacks and Queues 
