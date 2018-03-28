@@ -147,6 +147,72 @@ A function can only have one return value, but it can be any type of value.
 
 ---
 
+## Global v.s Local Variables
+
+Variables defined inside a function block with the var keyword only exist within that function. This is what we call `local variable`.
+
+On the other hand, variables that you define outside the function block with the var keyword exist both inside and outside the function.
+
+Variables declared outside of any function scope are called `global variables.`
+
+**Avoid the use of global variables.** 
+
+Global variables can:
+- 1. Cause security vulnerabilities.
+- 2. Create confusion amongst which functions can modify the variable.
+- 3. Cause you to accidentally create the same variable name twice.
+- 4. Confuse the developers on your team.
+
+JavaScript will look first in the local scope. Otherwise, it will look for a global scope.
+
+## Build a Calculator
+
+``` js
+function addNumbers(numOne,numTwo)
+{
+  var sum = numOne + numTwo;
+  return sum;
+}
+
+function subtractNumbers(numOne,numTwo)
+{
+  var difference = numOne - numTwo;
+  return difference;
+}
+
+function multiplyNumbers(numOne,numTwo)
+{
+  var product = numOne * numTwo;
+  return product;
+}
+
+function divideNumbers(numOne,numTwo)
+{
+  var quotient = numOne / numTwo;
+  return quotient;
+}
+
+function calculator(numOne, numTwo, operation)
+{
+  if (operation === "addition")
+  {
+    addNumbers();
+  }
+  else if(operation === "subraction")
+  {
+    subtractNumbers();
+  }
+  else if(operation === "multiplication")
+  {
+    multiplyNumbers();
+  }
+    else if(operation === "division")
+  {
+    divideNumbers();
+  }
+}
+```
+
 
 
 
