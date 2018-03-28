@@ -11,6 +11,9 @@ To help structure our code and make common operations reusable, we create functi
 
 Values can be passed to a function, and the function will return a value. Functions are one of the fundamental building blocks in JavaScript. A function is a set of statements that performs a particular task of the program. This task could be just a little part, or even the whole program.
 
+Return "Returns" the result of the function we ran. we use "return" when we want a function to remember a result. 
+Return makes the function remember to hold this result in its "memory" so it wont forget it if we need to use that result in another place.
+
 ***Abstraction*** works by separating **what** a `function` does and **how** it does it.
 
 In Javascript we work with three types of functions.
@@ -165,52 +168,51 @@ Global variables can:
 
 JavaScript will look first in the local scope. Otherwise, it will look for a global scope.
 
-## Build a Calculator
+## Challenge: Build a Calculator
 
 ``` js
-function addNumbers(numOne,numTwo)
-{
-  var sum = numOne + numTwo;
-  return sum;
+function addNumbers(numOne, numTwo){ // FOURTH - addNumbers() is handed the values numOne & numTwo from the calculator function.
+  var result = numOne + numTwo; // FIFTH - We run the calculation.
+  return result; // SIXTH - This is like us saying "Hey addNumbers(), please remember the result was __, I may need to use it later."
 }
 
-function subtractNumbers(numOne,numTwo)
-{
-  var difference = numOne - numTwo;
-  return difference;
+function subtractNumbers(numOne,numTwo){
+  var result = numOne - numTwo; 
+  return result;
 }
 
-function multiplyNumbers(numOne,numTwo)
-{
-  var product = numOne * numTwo;
-  return product;
+function multiplyNumbers(numOne,numTwo){
+  var result = numOne * numTwo; 
+  return result;
 }
 
-function divideNumbers(numOne,numTwo)
-{
-  var quotient = numOne / numTwo;
-  return quotient;
+function divideNumbers(numOne,numTwo){
+  var result = numOne / numTwo; 
+  return result;
 }
 
-function calculator(numOne, numTwo, operation)
+function calculator(numOne, numTwo, operation) // FIRST - The calculator function recieves the paramaters we passed it.
 {
-  if (operation === "addition")
-  {
-    addNumbers();
+  if (operation === 'addition'){ // SECOND - The IF statement checks if the statement is TRUE. 
+    return addNumbers(numOne, numTwo); // THIRD - AddNumbers() function has permission to run now, since the IF statement was true.
+                           // SEVENTH- Calculator() asks addNumbers(): Hey addNumbers() what was the result?." addNumbers() replys.
+                           // EIGHT - The Return statement next to addNumbers() is now telling Calculator() "Hey Calculator(), addNumbers told me the result was _ and I was told to remember that result was _" & Calculator() gives you the result.
   }
-  else if(operation === "subraction")
-  {
-    subtractNumbers();
+  else if(operation === 'subraction'){
+    return subtractNumbers(numOne, numTwo);
   }
-  else if(operation === "multiplication")
-  {
-    multiplyNumbers();
+  else if(operation === 'multiplication'){
+    return multiplyNumbers(numOne, numTwo);
   }
-    else if(operation === "division")
-  {
-    divideNumbers();
+  else if(operation === 'division'){
+    return divideNumbers(numOne, numTwo);
+  }
+  else(operation === ' '){
+    console.log("You didn't select an operation!");
   }
 }
+
+calculator(15,10,"addition"); // 25
 ```
 
 
