@@ -1,9 +1,9 @@
 # Functions
 
 - [X] Creating a function.
-- [ ] Use `return` values in a function.
-- [ ] Understand `arguments`.
-- [ ] Understand `function scope`.
+- [X] Use `return` values in a function.
+- [X] Understand `arguments`.
+- [X] Understand `function scope`.
 
 Generally speaking, a function is a “mini-program” that can be called by code external to the function. Like the program itself, a function is composed of a sequence of statements called the function body. 
 
@@ -166,7 +166,11 @@ Global variables can:
 - 3. Cause you to accidentally create the same variable name twice.
 - 4. Confuse the developers on your team.
 
-JavaScript will look first in the local scope. Otherwise, it will look for a global scope.
+JavaScript will look first in the local scope. Otherwise, it will look for a `global scope`.
+
+The main thing is if the function cant find something , it moves one level OUT and checks if it is there. If we have one nested function then the JavaScript engine would have checked one level OUT to the nested function, then if it does not find the variable inside the nested function, it moves one more level OUT until it reaches the `global scope`. If it finds nothing it might give you an error saying a variable is not declared. 
+
+The main concept here is that *functions NEVER LOOK INWARDS* they *always look OUTWARDS* and check one level at a time with the last possible level being the `global scope`.
 
 ## Challenge: Build a Calculator
 
