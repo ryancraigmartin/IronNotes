@@ -9,6 +9,13 @@ The key is a string that identifies a property of an object.
 
 Objects are data models that allow us to combine properties and methods for a specific data set in a structured way. 
 
+If I was an object I would have properties like: 
+- Name: Ryan
+- Hair: Brown 
+- Height: 5'11
+
+console.log(); - Can be broken down into an Object and a Method.
+
 ***Object*** - Course Data: 
   - title ---> Properties
   - instructor ---> Properties
@@ -17,6 +24,9 @@ Objects are data models that allow us to combine properties and methods for a sp
   - views ---> Properties
 
 ---
+
+Remember that keys can’t have spaces like my key, and they should be camelCase.
+You have to separate the keys values with a comma after each value, otherwise it will give you an error.
 
 ## Defining an Object
 
@@ -44,4 +54,47 @@ published:  true,
 views: 0,
 }
 console.log(course);
+```
+
+### Dot & Bracket Notation to Access Values
+
+&nbsp; Accessing values with dot notation
+
+`olympicRecords.athletics100Men // => "Justin Gatlin"`
+
+&nbsp; Accessing values with brackets notation
+
+`olympicRecords["athletics100Men"] // => "Justin Gatlin"`
+
+It’s best practice to use dot notation as much as you can though because it’s shorter and cleaner.
+
+
+&nbsp; Adding / Updating Properties With Dot Notation
+
+``` js
+var olympicRecords = {
+  athletics100Men: "Justin Gatlin",
+  athleticsLongJumpMen: "Mike Powel",
+}
+
+olympicRecords.swimming200Men = "Michael Phelps";
+```
+&nbsp; Adding / Updating Properties With Bracket Notation
+``` js
+var olympicRecords = {
+  athletics100Men: "Justin Gatlin",
+  athleticsLongJumpMen: "Mike Powel",
+  swimming200Men: "Michael Phelps"
+}
+olympicRecords["swimming400Women"] = "Katie Ledecky";
+
+```
+Object.keys() will help you to list all the properties of the object.
+
+`for..in` is a loop specifically designed for iterating over objects.
+``` js
+for (var recordName in olympicRecords){
+  // recordName is a **key** in the object
+  console.log("recordName: " + recordName);
+}
 ```
