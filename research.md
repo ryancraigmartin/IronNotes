@@ -21,3 +21,5 @@ Closures
 **const** = `Constant` variable. Value *cannot be changed* once defined.
 
 **let** = `Block Scope` variable. Has an even smaller scope than a `var`.
+
+## The Big O
