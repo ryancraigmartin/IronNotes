@@ -4,7 +4,7 @@ Simply put, databases allow us to save and retrieve the data that we need.
 
 Databases are typically `persisted` which means that even if our program stops or starts, we will still have access to the stored data.
 
-Databases allow for: 
+Databases allow for:
 
 - **Reliability**: Data can always be accessed.
 
@@ -20,9 +20,11 @@ Databases allow for:
 
 While using the MEAN stack, we use MongoDB. 
 
-MongoDB is a non-relational database that stores data in collections. The data that is stored is in JSON like documents that allow for changes to the structure.
+MongoDB is a *non-relational* / *noSQL* database that stores data in collections. The data that is stored in `JSON` (JavaScript Object Notation)like documents that allow for changes to the structure.
 
-MongoDB Compass is the official GUI (Graphical User Interface) for MongoDB.
+With noSQL, you don't have to have a pre-defined structuring before beginning to put together your application.
+
+*MongoDB Compass* is the official GUI (Graphical User Interface) for MongoDB.
 
 `ObjectIDs` are a MongoDB type used to identify documents in a collection uniquely. MongoDB will create them automatically for us.
 
