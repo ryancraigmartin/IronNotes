@@ -44,21 +44,21 @@ A `<span>` tag is an inline, generic wrapper for text. These are useful for appl
 
 The span has no semantic meaning other than “Hey, this text is special and I’m going to change it somehow”.
 
-### Semantic Inline Elements 
+### Semantic Inline Elements
 
-`a`:	A link used to navigate to different pages, or a different place in the same page.
+`a`: A link used to navigate to different pages, or a different place in the same page.
 
-`br`:	Denotes a line break that is part of the content. For example, in a poem where one line must always be broken after another. This is not meant for moving text from one line to another for stylistic purposes.
+`br`: Denotes a line break that is part of the content. For example, in a poem where one line must always be broken after another. This is not meant for moving text from one line to another for stylistic purposes.
 
-`em`:	Italic text that is meant to emphasize contained text.
+`em`: Italic text that is meant to emphasize contained text.
 
-`small`:	Used for side comments, or small print text.
+`small`: Used for side comments, or small print text.
 
-`i`:	Italic text that is meant to be said in a different tone, or contains a defintion of some sort.
+`i`: Italic text that is meant to be said in a different tone, or contains a defintion of some sort.
 
-b`:	Bold text. Is not meant to put semantic meaning on text, it’s simply stylistic. A common example is a product name on an ecommerce site.
+b`: Bold text. Is not meant to put semantic meaning on text, it’s simply stylistic. A common example is a product name on an ecommerce site.
 
-`strong`:	Indicates the content contained within is very important.
+`strong`: Indicates the content contained within is very important.
 
 ## CSS Selectors
 
