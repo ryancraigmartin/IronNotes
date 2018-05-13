@@ -4,24 +4,24 @@ An Object in JavaScript is a collection composed of key-value pairs.
 
 The key is a string that identifies a property of an object.
 
-- The value is the content associated to the indicated key. 
+- The value is the content associated to the indicated key.
 - The keys are also unique in an object, one key will always have just one value associated to it. This value could be any type of JavaScript value.
 
 Objects are data models that allow us to combine properties and methods for a specific data set in a structured way. 
 
-If I was an object I would have properties like: 
+If I was an object I would have properties like:
 - Name: Ryan
-- Hair: Brown 
+- Hair: Brown
 - Height: 5'11
 
 console.log(); - Can be broken down into an Object and a Method.
 
-***Object*** - Course Data: 
-  - title ---> Properties
-  - instructor ---> Properties
-  - level ---> Properties
-  - published   ---> Properties
-  - views ---> Properties
+***Object*** - Course Data:
+- title ---> Properties
+- instructor ---> Properties
+- level ---> Properties
+- published   ---> Properties
+- views ---> Properties
 
 ---
 
@@ -44,7 +44,7 @@ console.log(course);
 &nbsp; This can also be written like this:
 
 ``` js
-var course = new Object(); 
+var course = new Object();
 
 var course = {
 title: "JavaScript Essentials",

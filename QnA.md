@@ -16,6 +16,8 @@ Synchronous code waits for one action to complete before moving on to the next. 
 
 When we looked at JavaScript, we learned that code executes from top to bottom, instruction by instruction sequentially. We can add loops and conditionals to construct the logic of our algorithms,but in the end, it’s just one instruction after another
 
+---
+
 ## Framework vs. Toolkit vs. Library
 
 The most important difference, and in fact the defining difference between a library and a framework is Inversion of Control.
@@ -39,3 +41,6 @@ A framework embodies some abstract design, with more behavior built in. In order
 To summarize: your code calls a library but a framework calls your code.
 
 [StackOverflow Link](https://stackoverflow.com/questions/3057526/framework-vs-toolkit-vs-library)
+
+---
+
