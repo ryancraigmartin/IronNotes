@@ -2,7 +2,7 @@
 
 ## Articles
 
-
+[Understanding map, filter and reduce in Javascript by Luuk Gruijs](https://hackernoon.com/understanding-map-filter-and-reduce-in-javascript-5df1c7eee464)
 
 
 ## Books

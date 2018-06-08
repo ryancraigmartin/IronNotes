@@ -21,3 +21,21 @@ Closures
 **const** = `Constant` variable. Value *cannot be changed* once defined.
 
 **let** = `Block Scope` variable. Has an even smaller scope than a `var`.
+
+## Difference between =, ==, & ===
+
+= -  Assignment operator
+
+== & != - Loose/Lenient equality and inequality. Try to convert values of different types before comparing them. (Type coercion)
+
+=== & !== - Strict equality and inequality. Equal value and equal type.
+Ex.
+``` js
+'hello world' === 'hello world'
+// true (Both Strings & equal values)
+
+77 === '77'
+// false (Number v.s String)
+```
+
+[Speaking JavaScript: An In-Depth Guide for Programmers by Dr. Axel Rauschmayer](http://speakingjs.com/es5/ch09.html)

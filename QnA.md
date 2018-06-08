@@ -44,3 +44,32 @@ To summarize: your code calls a library but a framework calls your code.
 
 ---
 
+## Difference between =, ==, & ===
+
+= -  Assignment operator
+
+== & != - Loose/Lenient equality and inequality. Try to convert values of different types before comparing them. (Type coercion)
+
+=== & !== - Strict equality and inequality. Equal value and equal type.
+Ex.
+``` js
+'hello world' === 'hello world'
+// true (Both Strings & equal values)
+
+77 === '77'
+// false (Number v.s String)
+```
+
+[Speaking JavaScript: An In-Depth Guide for Programmers by Dr. Axel Rauschmayer](http://speakingjs.com/es5/ch09.html)
+
+---
+## Falsy values
+
+There are only six falsy values in JavaScript you should be aware of:
+
+- **null**
+- **undefined**
+- **false** —  boolean false
+- **0**  —  number zero
+- **NaN** —  Not A Number
+- “”  —  empty string
