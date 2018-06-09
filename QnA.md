@@ -73,3 +73,15 @@ There are only six falsy values in JavaScript you should be aware of:
 - **0**  —  number zero
 - **NaN** —  Not A Number
 - “”  —  empty string
+
+---
+
+## Method vs Function vs Procedure
+
+Practically speaking, there's really no difference, with the slight exception that "method" usually refers to a subroutine associated with an object in Object Oriented languages.
+
+The terms "procedure, function, subroutine, subprogram, and method" all really mean the same thing: a callable sub-program within a larger program. But it's difficult to come up with a definition that captures all variant usages of these terms, because they are not used consistently across programming languages or paradigms. The only exception is probably "method", which seems to be used almost entirely with Object Oriented languages, referring to a function that is associated with an object
+
+[Source](https://softwareengineering.stackexchange.com/questions/20909/method-vs-function-vs-procedure)
+
+---
