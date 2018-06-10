@@ -260,3 +260,63 @@ console.log(totalYearsES6);
 ```
 
 [JavaScript Higher Order Functions & Arrays by Traversy Media](https://www.youtube.com/watch?v=rRgD1yVwIvE&t=484s)
+
+---
+``` js
+// =============================================================================
+// MAP
+// =============================================================================
+
+let animals = [
+    {name: 'Cocoa',       species: 'dog'},
+    {name: 'Fluffy',      species: 'rabbit'},
+    {name: 'Baxter',      species: 'dog'},
+    {name: 'Porkchop',    species: 'dog'},
+    {name: 'Meowingtons', species: 'cat'}
+]
+
+const names = animals.map(animal => {
+    return animal.name + ' is a ' + animal.species;
+})
+
+// The code above can be done in shorthand as follows:
+
+const namesInShorthand = animals.map((x) => x.name  + ' is a ' + x.species);
+
+// console.log(namesInShorthand);
+
+// =============================================================================
+// REDUCE -
+// =============================================================================
+
+let orders = [
+    {amount: 250},
+    {amount: 350},
+    {amount: 550},
+    {amount: 850},
+]
+
+// Sum done with a for loop:
+let total = 0;
+for(let i = 0; i < orders.length; i++){
+    total += orders[i].amount;
+}
+
+var totalReduced =  orders.reduce((sum, order) => {
+    console.log('Starting at:',sum, 'Adding:', order);
+    return sum + order.amount;
+}, 0)
+
+console.log('Sum of all amounts: ', totalReduced);
+
+// Result:
+// Starting at: 0 Adding: { amount: 250 }
+// Starting at: 250 Adding: { amount: 350 }
+// Starting at: 600 Adding: { amount: 550 }
+// Starting at: 1150 Adding: { amount: 850 }
+// Sum of all amounts:  2000
+
+// ---------------------------------------------
+```
+
+[Functional programming in JavaScript - FunFunFunction](https://www.youtube.com/playlist?list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)

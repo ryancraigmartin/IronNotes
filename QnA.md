@@ -85,3 +85,23 @@ The terms "procedure, function, subroutine, subprogram, and method" all really m
 [Source](https://softwareengineering.stackexchange.com/questions/20909/method-vs-function-vs-procedure)
 
 ---
+
+## 8 HTTP Methods every Dev should know
+
+- GET: fetch an existing resource. The URL contains all the necessary information the server needs to locate and return the resource.
+- POST: create a new resource. POST requests usually carry a payload that specifies the data for the new resource.
+- PUT: update an existing resource. The payload may contain the updated data for the resource.
+- PATCH: Used for making partial changes to an existing resource.
+- DELETE: delete an existing resource.
+- HEAD: this is similar to GET, but without the message body. It's used to retrieve the server headers for a particular resource, generally to check if the resource has changed, via timestamps.
+- OPTIONS: used to retrieve the server capabilities. On the client-side, it can be used to modify the request based on what the server can support.
+- TRACE: used to retrieve the hops that a request takes to round trip from the server. Each intermediate proxy or gateway would inject its IP or DNS name into the Via header field. This can be used for diagnostic purposes.
+
+[HTTP: The Protocol Every Web Developer Must Know ](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177)
+
+## When to use PUT and when to use PATCH
+
+When a client needs to replace an existing Resource entirely, they can use `PUT`. When they’re doing a partial update, they can use HTTP `PATCH`. Another important aspect to consider here is idempotence; `PUT` is idempotent; `PATCH` can be, but isn’t required to.
+
+[REST API - PUT vs PATCH with real life examples](https://stackoverflow.com/questions/28459418/rest-api-put-vs-patch-with-real-life-examples)
+[HTTP PUT vs HTTP PATCH in a REST API](http://www.baeldung.com/http-put-patch-difference-spring)
