@@ -16,12 +16,6 @@ Block vs nested block...
 
 Closures
 
-## Const & Let
-
-**const** = `Constant` variable. Value *cannot be changed* once defined.
-
-**let** = `Block Scope` variable. Has an even smaller scope than a `var`.
-
 ## Difference between =, ==, & ===
 
 = -  Assignment operator
