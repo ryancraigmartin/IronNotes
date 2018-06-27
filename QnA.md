@@ -105,3 +105,12 @@ When a client needs to replace an existing Resource entirely, they can use `PUT`
 
 [REST API - PUT vs PATCH with real life examples](https://stackoverflow.com/questions/28459418/rest-api-put-vs-patch-with-real-life-examples)
 [HTTP PUT vs HTTP PATCH in a REST API](http://www.baeldung.com/http-put-patch-difference-spring)
+
+---
+
+## Immutable vs Mutable objects
+
+A mutable object is an object whose state can be modified after it is created.
+
+Immutables are the objects whose state cannot be changed once the object is created.
+

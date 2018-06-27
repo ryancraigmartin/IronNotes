@@ -1,5 +1,9 @@
 # Objects
 
+The simple types of JavaScript are numbers, strings, booleans, null, and undefined. All other values are objects. Arrays, functions, regular expressions, and objects of course are all objects.
+
+An object property value can be any value except for undefined.
+
 An Object in JavaScript is a collection composed of key-value pairs.
 
 The key is a string that identifies a property of an object.
@@ -25,8 +29,8 @@ console.log(); - Can be broken down into an Object and a Method.
 
 ---
 
-Remember that keys can’t have spaces like my key, and they should be camelCase.
-You have to separate the keys values with a comma after each value, otherwise it will give you an error.
+Remember that keys can’t have spaces like my key, and they should be camelCase. You have to separate the keys values with a comma after each value, otherwise it will give you an error.
+
 
 ## Defining an Object
 
