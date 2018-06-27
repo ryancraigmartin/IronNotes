@@ -17,7 +17,8 @@
 **Temporal Dead Zone**: You cannot access a variable before it is defined. When using var, the value will be undefined. When using let and const, it will give you an error.
 
 **Default function arguments:** If nothing is passed into a function you can set defaults for the arguments.
-EX: 
+
+EX:
 ``` js
 function calculateBill(total, tax = .13, tip = .15)
 ```

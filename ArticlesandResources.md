@@ -6,6 +6,8 @@
 
 [Front-end-Developer-Interview-Questions by h5bp](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
 
+[Promises in AngularJS, Explained as a Cartoon](http://andyshora.com/promises-angularjs-explained-as-cartoon.html)
+
 ### Articles on Interviewing
 
 [10 Interview Questions Every JavaScript Developer Should Know](https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95)
