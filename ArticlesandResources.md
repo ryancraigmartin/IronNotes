@@ -30,6 +30,8 @@
 
 - [HTML & CSS](http://www.htmlandcssbook.com/) + [JavaScript & JQuery](http://javascriptbook.com/) by Jon Duckett
 
+- [JavaScript: The Good Parts by Douglas Crockford](https://www.goodreads.com/book/show/2998152-javascript) 
+
 - [JavaScript Novice to Ninja 2nd Edition](https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition) by Darren Jones & SitePoint
 
 - [Full Stack JavaScript Development With MEAN - MongoDB, Express, AngularJS, and Node.JS 1st Edition](https://www.sitepoint.com/premium/books/full-stack-javascript-development-with-mean) by Colin J. Ihrig & Adam Bretz
