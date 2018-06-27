@@ -118,14 +118,37 @@ Immutables are the objects whose state cannot be changed once the object is crea
 
 - JavaScript is a *multi paradigm language*. A *paradigm* is a way of thinking about software construction based off of fundamental design principles. JavaScript supports imperative / procedural programming along with OOP, and functional programming. JS supports **OOP with prototypal inheritance** where app state is shared and colocated with methods in objects.
 
-- What is `functional programming?`: One of the two pillars of JavaScript. Produces programs by composing mathematical functions, avoids `shared state` and mutable data. Focuses on function purity, avoiding side effects, simple function composition, & first class functions. FP is declarative rather than imperative, and app state flows through pure functions.
+---
+
+What is a `Object Oriented Programming`?
+OOP is method of computer programming that involves using 'objects'. It allows a developer to concentrate on the relationships between objects which are usually at the heart of an application. An object is essentially a piece of code that lets you create many similar pieces of code without actually re-writing the code each time. This is done by first writing a 'class', which is essentially a blueprint of the object, then you can easily create an 'instance' of the object, which is basically just one particular version of the object, built from the blueprint.
+
+- Inheritance = Objects can inherit features from other objects.
+
+![Example:](https://cdn-images-1.medium.com/max/800/1*fdxNTeWlEeIQHwYSYLCn5g.jpeg)
+
+- Polymorphism = Objects can share the same interface — how they are accessed and used — while their underlying implementation of the interface may differ.
+
+- Encapsulation = Each object is responsible for specific tasks.
+
+---
+
+- What is `Functional Programming?`: One of the two pillars of JavaScript. Produces programs by composing mathematical functions, avoids `shared state` and mutable data. Focuses on function purity, avoiding side effects, simple function composition, & first class functions. FP is declarative rather than imperative, and app state flows through pure functions.
+
+---
 
 What is a `Closure?`
 
-* Inner functions have **access to the actual parameters of the outer functions (not copies)**
-* If an object is created as a result of a function and assigned to myObject, myObject continues to share access to the variables in the functions that created it (actual variables, not copies)
-	* It has access to *the context in which it was created* - this is *closure*
-	* This includes later on, even if *the outer function has completed its execution and returned*, when the inner function is called, it will still have **access to all the variables it had access to at the time it was defined** (i.e. the variables that were *in context* when the inner function was defined)
+- Inner functions have **access to the actual parameters of the outer functions (not copies)**
+- If an object is created as a result of a function and assigned to myObject, myObject continues to share access to the variables in the functions that created it (actual variables, not copies)
+  - It has access to *the context in which it was created*  this is *closure*.
+  - This includes later on, even if *the outer function has completed its execution and returned*, when the inner function is called, it will still have **access to all the variables it had access to at the time it was defined** (i.e. the variables that were *in context* when the inner function was defined)
+
+It is most frequently used in data privacy, event handlers, callback functions, currying, and other functional programming.
+
+>“Closure is when a function is able to remember and access its lexical scope even when the function is executing outside its lexical scope.” - Kyle Simpson
+
+---
 
 What are `Callbacks?`
 
@@ -139,7 +162,16 @@ send_request_asynchronously(request, function(response){     //function being pa
 });
 ```
 
-- What is a `promise?`: A promise is a placeholder for computation that hasn't happened/finished yet. The then()function accepts 2 functions as parameters: a function to be executed when the promise is fulfilled, and a function to be executed when the promise is rejected.
+---
+
+What is a `promise?`: 
+A promise is an object that may produce a single value some time in the future: either a resolved value, or a reason that it’s not resolved (e.g., a network error occurred). A promise may be in one of 3 possible states: fulfilled, rejected, or pending. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection.
+
+The then() function accepts 2 functions as parameters: a function to be executed when the promise is fulfilled, and a function to be executed when the promise is rejected.
+
+Native JavaScript promises don’t expose promise states. Instead, you’re expected to treat the promise as a black box. Only the function responsible for creating the promise will have knowledge of the promise status, or access to resolve or reject.
+
+[A standard for promises was defined by the Promises/A+ specification community.](https://promisesaplus.com/implementations)
 
 > Kyle Simpson: "Think of a promise as being like a meal receipt at a fast-food restaurant. You order your meal and pay for it, and the clerk gives you a number that you need to claim the food when it is done. When the food comes out, the clerk calls your number and you exchange the receipt for the food. Promises work the same way. You've called a function, passed it some data, and received a promise in return. When the "food" is done, the function resolves the promise (calls your number) and passes you the result. Attaching a callback to the promise is your way of handing back the receipt."Why not just use a callback?" you may ask. Well, promises offer some control flow advantages that are kind of cumbersome to do with callbacks, but the real advantage is that the promise acts as a data escrow. A promise can never be resolved multiple times, will always be resolved asynchronously, bubbles up any errors that occur, and ensure that the code you're calling can't accidentally hang on to your calling context and create a memory leak. Callbacks have none of these abilities and can actually be dangerous for your application if a third party library handles them wrong."
 
@@ -155,6 +187,31 @@ send_request_asynchronously(request, function(response){     //function being pa
 - Await works only with Promises, it does not work with callbacks.
 - Await can only be used inside async functions.
 
-What is *recursion?* A recursive function is a function that calls itself, either directly or indirectly. It's a powerful programming technique in which a problem is divided into a set of similar sub problems, each solved with a trivial solution. Generally, a recursive function calls itself to solve its sub-problems. They can be very effective in manipulating tree structures such as the browser's DOM.
+What is `recursion?` A recursive function is a function that calls itself, either directly or indirectly. It's a powerful programming technique in which a problem is divided into a set of similar sub problems, each solved with a trivial solution. Generally, a recursive function calls itself to solve its sub-problems. They can be very effective in manipulating tree structures such as the browser's DOM.
 
-What is *Scope*? Scope in programming languages controls the visibility and lifetimes of variables and parameters. The parameters and variables defined inside of a function are not visible outside of the function, and a variable defined anywhere within a function is visible everywhere within that function. This reduces naming collisions and provides automatic memory management.
+What is `Scope`? Scope in programming languages controls the visibility and lifetimes of variables and parameters. The parameters and variables defined inside of a function are not visible outside of the function, and a variable defined anywhere within a function is visible everywhere within that function. This reduces naming collisions and provides automatic memory management.
+
+---
+
+What is `lexical scope`?
+With (static) lexical scoping, the structure of the program source code determines what variables you are referring to.
+
+---
+
+What is `Hoisting`?
+
+---
+
+What is a `pure function`?
+
+---
+
+What is an `AJAX request`? 
+
+- *AJAX* = Asynchronous JavaScript and XML.
+
+- *AJAX* is the technique used to exchange data with a server, and update parts of a web page and load portions of a page dynamically without reloading the whole page.
+  - EX: Think of an online shopping cart.
+
+Asynchronous is the important part of *AJAX*. Traditionally you load a web page all at the same time (right when you first click a link or type in an address). *AJAX* allows for delaying in loading parts of that data until some later time, usually based on user actions.
+

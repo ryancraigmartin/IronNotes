@@ -1,12 +1,14 @@
 # Notes on React
 
+Initial State is the state of the component when it first mounts. This can be set in the constructor or use a property within the state object.
+
 Components take parameters aka props and returns views to display via the render method.
 
 The render method returns a description of what to render and displays it on the screen.
 
 A constructor can use the super() keyword to call the constructor of the super class.
 
-When you want to aggregate data from multiple children or to have two child components communicate with each other, *move the state upwards so that it lives in the parent component.* The parent can then pass the state to it's children via `props` so that the child components are always in sync with each other as well as the parent component.
+When you want to aggregate data rom multiple children or to have two child components communicate with each other, *move the state upwards so that it lives in the parent component.* The parent can then pass the state to it's children via `props` so that the child components are always in sync with each other as well as the parent component.
 
 Component state is considered to be private.
 
