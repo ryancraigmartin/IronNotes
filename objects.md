@@ -2,7 +2,7 @@
 
 The simple types of JavaScript are numbers, strings, booleans, null, and undefined. All other values are objects. Arrays, functions, regular expressions, and objects of course are all objects.
 
-An object property value can be any value except for undefined.
+An Object property value can be any value except for undefined.
 
 An Object in JavaScript is a collection composed of key-value pairs.
 
@@ -102,3 +102,5 @@ for (var recordName in olympicRecords){
   console.log("recordName: " + recordName);
 }
 ```
+
+Every object is linked to a prototype object (`Object.prototype`)from which it can inherit properties. When changes are made to an object, the object's prototype is not touched.
