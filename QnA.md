@@ -191,6 +191,12 @@ What is `recursion?` A recursive function is a function that calls itself, eithe
 
 What is `Scope`? Scope in programming languages controls the visibility and lifetimes of variables and parameters. The parameters and variables defined inside of a function are not visible outside of the function, and a variable defined anywhere within a function is visible everywhere within that function. This reduces naming collisions and provides automatic memory management.
 
+- A *block* is a set of statements contained in curly brackets {}
+- Javascript **does not have block scope** but **does have function scope**
+  - All variables declared *anywhere* within a function are **available everywhere in that function** - i.e. and inner function will have access to the variables of the outer function in which it is defined
+  - A variable can be *overwritten* with a new value in an inner function and that new value's scope will be just the body of the inner function - as soon as you're back out to the outer function, the value of that variable will revert to what it was before the inner function began its execution
+  - All variable should be **declared at the top of the function body**
+
 ---
 
 What is `lexical scope`?
