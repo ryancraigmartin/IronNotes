@@ -206,7 +206,7 @@ What is a `pure function`?
 
 ---
 
-What is an `AJAX request`? 
+What is an `AJAX request`?
 
 - *AJAX* = Asynchronous JavaScript and XML.
 
