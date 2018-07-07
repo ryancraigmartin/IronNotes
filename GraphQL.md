@@ -1,0 +1,10 @@
+# GraphQL
+
+`REST` is one of the most popular choices to connect both worlds. In REST everything evolves around the idea of having resources which are accessible by URLs. Often people will use JSON for formatting data. In the end, REST enables applications to communicate with each other by using plain HTTP with URLs and HTTP methods. Even though `REST` was the status quo for a long time, another technology developed by Facebook emerged in the recent years: it’s called `GraphQL`.
+
+## What is GraphQL
+
+`GraphQL` is an open source query language which was initially made for Facebook's Mobile applications. It was developed as an alternative to the common *REST* architecture by only allowing the client to request data. When having a RESTful architecture, this becomes quite difficult, because the back-end defines what is available with each resource on each URL. It is not the frontend which asks for a selection of data. So the frontend always has to request all the information in a resource even though it only needs a part of it. This problem is called over-fetching. In a worst case scenario, a client application has to read not only one but multiple resources which are accessed with multiple network requests. When using GraphQL the client decides what data is needed by making one request to the server which in Facebook's case drastically reduced network usage and transfer of data.
+
+A GraphQL operation is either a query (read), mutation (write) or subscription (continuous read). Each of those operations is only a string which needs to be constructed accordingly to the GraphQL query language specification. Once such a GraphQL operation reaches the back-end application coming from a frontend application, it can be interpreted against the entire GraphQL schema on the back-end and resolved with data for the frontend application. GraphQL is not opinionated about the network layer (which often happens to be HTTP) and not opinionated about the payload format (which often happens to be JSON). It isn’t opinionated about the application architecture at all (which often happens to be a frontend/back-end architecture). It is only a query language.
+
