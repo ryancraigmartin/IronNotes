@@ -24,3 +24,10 @@ If you understand the following four rules you will be able to determine what th
             - A building block for more advanced programming techniques.
 
 - **new** - A new object is created. The keyword this will refer to the new object that is created.
+
+A function call with a **new** operator in front of it turns into a constructor call. When the function is invoked as a constructor, a new object is created which is used as the this binding for the function call.
+
+---
+
+If we are not in Strict Mode, a plain function call sets this to the *global object*.
+If we are in Strict Mode, a plain function call sets this to *undefined*. This depends only if the function is written in strict mode.

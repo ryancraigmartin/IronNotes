@@ -221,3 +221,25 @@ What is an `AJAX request`?
 
 Asynchronous is the important part of *AJAX*. Traditionally you load a web page all at the same time (right when you first click a link or type in an address). *AJAX* allows for delaying in loading parts of that data until some later time, usually based on user actions.
 
+[What is `use strict / strict mode`?](https://stackoverflow.com/questions/1335851/what-does-use-strict-do-in-javascript-and-what-is-the-reasoning-behind-it)
+
+Strict Mode is a new feature in ECMAScript 5 that allows you to place a program, or a function, in a "strict" operating context. This strict context prevents certain actions from being taken and throws more exceptions.
+
+Strict mode helps out in a couple ways:
+
+It catches some common coding bloopers, throwing exceptions.
+It prevents, or throws errors, when relatively "unsafe" actions are taken (such as gaining access to the global object).
+It disables features that are confusing or poorly thought out.
+Also note you can apply "strict mode" to the whole file... Or you can use it only for a specific function (still quoting from John Resig's article):
+
+``` js
+// Non-strict code...
+
+(function(){
+  "use strict";
+
+  // Define your library strictly...
+})();
+
+// Non-strict code...
+```
